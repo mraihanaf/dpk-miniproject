@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project10</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="welcome">Selamat datang di PT. Indah Pada Waktunya</h1>
+    <header>
+      <img src="./assets/header.png" alt="" />
+    </header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><label for="project1">project1</label></li>
+          <li>Project 2</li>
+          <li>Project 3</li>
+        </ul>
+      </nav>
+      <section class="content">
+        <input type="checkbox" name="project1" id="project1" />
+        <form>
+          <table>
+            <tr>
+              <td><label for="nama">Nama:</label></td>
+              <td>
+                <input
+                  type="text"
+                  id="nama_depan"
+                  name="nama_depan"
+                  placeholder="Nama depan"
+                />
+                <input
+                  type="text"
+                  id="nama_belakang"
+                  name="nama_belakang"
+                  placeholder="Nama belakang"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="no_hp">No Hp:</label></td>
+              <td>
+                <input
+                  type="text"
+                  id="no_hp"
+                  name="no_hp"
+                  placeholder="No Hp"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="email">Email:</label></td>
+              <td>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label>Gender:</label></td>
+              <td>
+                <input type="radio" id="pria" name="gender" value="pria" />
+                <label for="pria">Pria</label>
+                <input type="radio" id="wanita" name="gender" value="wanita" />
+                <label for="wanita">Wanita</label>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="jenjang">Jenjang:</label></td>
+              <td>
+                <select id="jenjang" name="jenjang">
+                  <option value="tk">TK</option>
+                  <option value="sd">SD</option>
+                  <option value="smp">SMP</option>
+                  <option value="sma">SMA</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label>Hobi:</label></td>
+              <td>
+                <input
+                  type="checkbox"
+                  id="membaca"
+                  name="hobi"
+                  value="membaca"
+                />
+                <label for="membaca">Membaca</label>
+                <input
+                  type="checkbox"
+                  id="menggambar"
+                  name="hobi"
+                  value="menggambar"
+                />
+                <label for="menggambar">Menggambar</label>
+                <input
+                  type="checkbox"
+                  id="menulis"
+                  name="hobi"
+                  value="menulis"
+                />
+                <label for="menulis">Menulis</label>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="alamat">Alamat:</label></td>
+              <td><textarea id="alamat" name="alamat"></textarea></td>
+            </tr>
+            <tr>
+              <td colspan="2"><input type="submit" value="Kirim" /></td>
+            </tr>
+          </table>
+        </form>
+      </section>
+    </div>
+    <footer>
+      <h1>.footer</h1>
+    </footer>
+  </body>
+</html>

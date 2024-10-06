@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project12</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-color: #1a237e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      .login-container {
+        display: flex;
+        background-color: white;
+        border-radius: 4px;
+        overflow: hidden;
+        width: 800px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .left-side {
+        background-color: #03a9f4;
+        color: white;
+        padding: 40px;
+        width: 40%;
+      }
+      .right-side {
+        padding: 40px;
+        width: 60%;
+      }
+      h1 {
+        font-size: 36px;
+        margin-bottom: 30px;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+      }
+      li:before {
+        content: "○"; /* Changed to an open circle */
+        margin-right: 10px;
+        font-size: 16px; /* Adjusted for better visual match */
+      }
+      .header {
+        margin-bottom: 30px;
+        font-size: 20px;
+      }
+      .header span {
+        color: #999;
+      }
+      .input-container {
+        position: relative;
+        margin-bottom: 20px;
+      }
+      .input-container i {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #999;
+      }
+      input {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-bottom: 1px solid #ddd;
+        font-size: 16px;
+        box-sizing: border-box;
+      }
+      button {
+        background-color: #03a9f4;
+        color: white;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 20px;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-size: 14px;
+      }
+      .social-login {
+        margin-top: 20px;
+      }
+      .social-icons {
+        margin-left: 10px;
+      }
+      .social-icons i {
+        font-size: 24px;
+        margin: 0 5px;
+        cursor: pointer;
+      }
+      .fa-facebook {
+        color: #1877f2;
+      }
+      .fa-twitter {
+        color: #1da1f2;
+      }
+      .fa-google {
+        color: #ea4335;
+      }
+      .footer {
+        margin-top: 20px;
+        text-align: center;
+      }
+      .footer a {
+        color: #1a237e;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="left-side">
+        <h1>Static Login Form</h1>
+        <ul>
+          <li>Ut mattis mattis bibendum</li>
+          <li>Nullam rutrum sagittis interdum</li>
+          <li>Nam cursus eros sed elit</li>
+        </ul>
+      </div>
+      <div class="right-side">
+        <div class="header">Login <span>/ Sign up</span></div>
+        <form>
+          <div class="input-container">
+            <input type="email" placeholder="Email" />
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="input-container">
+            <input type="password" placeholder="Password" />
+            <i class="fas fa-lock"></i>
+          </div>
+          <button>LOGIN</button>
+        </form>
+        <div class="social-login">
+          Or login with
+          <span class="social-icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-google"></i>
+          </span>
+        </div>
+        <div class="footer">
+          <a href="#">Don't have an account?</a> /
+          <a href="#">Forgot password?</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
